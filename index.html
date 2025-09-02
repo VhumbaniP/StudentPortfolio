@@ -260,7 +260,11 @@
     .about .content h3 {
       font-weight: 700;
       font-size: 26px;
-      color: #173b6c;
+      color: var(--primary-color);
+    }
+
+    .about .content p {
+      color: var(--text-muted);
     }
 
     .about .content ul {
@@ -270,6 +274,7 @@
 
     .about .content ul li {
       padding-bottom: 10px;
+      color: var(--text-light);
     }
 
     .about .content ul i {
@@ -279,13 +284,17 @@
       line-height: 0;
     }
 
+    .about .content ul strong {
+      color: var(--primary-color);
+    }
+
     /* Resume */
     .resume .resume-title {
       font-size: 26px;
       font-weight: 700;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #050d18;
+      color: var(--primary-color);
     }
 
     .resume .resume-item {
@@ -299,18 +308,22 @@
       line-height: 18px;
       font-size: 18px;
       font-weight: 600;
-      color: #050d18;
+      color: var(--text-light);
       margin-bottom: 10px;
     }
 
     .resume .resume-item h5 {
       font-size: 16px;
-      background: #233054;
+      background: var(--primary-color);
       padding: 5px 15px;
       display: inline-block;
       font-weight: 600;
       margin-bottom: 10px;
       color: var(--text-light);
+    }
+
+    .resume .resume-item p {
+      color: var(--text-muted);
     }
 
     .resume .resume-item::before {
@@ -339,16 +352,17 @@
       text-transform: uppercase;
       display: block;
       font-weight: 600;
-      color: #050d18;
+      color: var(--text-light);
     }
 
     .skills .progress .skill .val {
       float: right;
       font-style: normal;
+      color: var(--primary-color);
     }
 
     .skills .progress-bar-wrap {
-      background: #dce8f8;
+      background: #233054;
       height: 10px;
     }
 
@@ -386,7 +400,7 @@
       font-size: 22px;
       font-weight: 600;
       margin-bottom: 5px;
-      color: #050d18;
+      color: var(--text-light);
     }
 
     .contact .info p {
